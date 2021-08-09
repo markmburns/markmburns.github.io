@@ -11,7 +11,7 @@ const cats=[
         name:"Chopper",
         job:"Cuddly cat",
         info:"Favourite food: chicken",
-        img:"./images/chopper.jpg"
+        img:"./images/chopper.JPG"
      },
      {
         id:3,
