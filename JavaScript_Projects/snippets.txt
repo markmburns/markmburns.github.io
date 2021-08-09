@@ -1,0 +1,6 @@
+// testing random method
+totals = [0,0,0,0,0,0,0,0,0,0]
+for(x=0;x<1000;x++){
+    n=Math.floor(Math.random()*totals.length)
+    totals[n]++
+}
