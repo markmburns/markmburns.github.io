@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nanonaut Action</title>
+    </head>
+    <body>
+        <h2><a href="../index.html">JavaScript Projects</a></h2>
+        <h1>Nanonaut Action</h1>
+    
+        <script>
+            // console.log("Hello World!");
+            var canvas = document.createElement('canvas');
+            canvas.width=800;
+            canvas.height=600;
+            document.body.appendChild(canvas);
+            var c = canvas.getContext('2d');
+            var image = new Image();
+            image.src = 'images/nanonaut.png';
+            var x=0;
+            var y=40;
+            window.addEventListener('load',start);
+            function start(){
+                window.requestAnimationFrame(loop);
+                //c.fillStyle='purple';
+                //c.fillRect(10,10,30,30);
+                //c.drawImage(image,20,40)
+            }
+            function loop(){
+                //drawing code etc.
+                c.clearRect(0,0,800,600);
+                c.drawImage(image,x,y);
+                x = x + 1;
+                window.requestAnimationFrame(loop);
+            }
+           // document.body.appendChild(canvas); 
+        </script>
+    </body>
+</html>
